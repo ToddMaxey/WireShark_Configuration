@@ -1,5 +1,15 @@
 # WireShark_Configuration
-This is my personal Wireshark configuration. This aids me in troubleshooting by adding new columns and filter buttons to help identify networking and or machine configuration issues. 
+This is my personal Wireshark configuration. This aids me in troubleshooting by adding new columns and filter buttons to help identify networking and or machine configuration issues.
+
+Instructions:
+
+Download the configuration ZIP and replace the files is C:\Users\<yourusername>\AppData\Roaming\Wireshark
+
+Or you can manually add the columns and filters.
+
+
+
+Details
 
 Additions - Columns
 
