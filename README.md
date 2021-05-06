@@ -25,9 +25,9 @@ Auth (Authenication) kerberos or ntlmssp or radius or ldap.authentication or ima
 
 Cert (Certificate) tls.handshake.certificates or pkcs12 or x509af or x509ce or x509if or x509sat
 
-Auth Username (Authenication Username) ldap.assertionValue or radius.User_Name or ntlmssp.auth.username or imap.request.username or mapi.EcDoConnect.name or kerberos.CNameString
+Auth Username / LDAP assertion (Authenication Username) ldap.assertionValue or radius.User_Name or ntlmssp.auth.username or imap.request.username or mapi.EcDoConnect.name or kerberos.CNameString
 
-TLS URL Endpoint (TLS URL Endpoint) tls.handshake.extensions_server_name
+SNI / URI (TLS URL Endpoint) tls.handshake.extensions_server_name
 
 TTL (Time To Live) ip.ttl or ipv6.hlim
 
@@ -44,7 +44,7 @@ DC Discovery - udp.port == 389 or dns.qry.type == 33
 
 Auth - kerberos or ntlmssp or radius or ldap.authentication or udp.port == 1812 or udp.port == 1813 or udp.port == 1645 or udp.port == 1646 or tcp.port ==88  or udp.port == 88 or imap.request.username or mapi.EcDoConnect.name or kerberos.CNameString or tls.handshake.extensions_server_name == "autologon.microsoftazuread-sso.com" or tls.handshake.extensions_server_name == "adnotifications.windowsazure.com" or tls.handshake.extensions_server_name == "logon.microsoftonline.com"
 
-High/Low TTL - ip.ttl < 64 or ip.ttl > 128 or ipv6.hlim < 64 or ipv6.hlim > 128
+High/Low TTL - ip.ttl <= 64 or ip.ttl > 128 or ipv6.hlim <= 64 or ipv6.hlim > 128
 
 ReXmit - tcp.analysis.retransmission
 
