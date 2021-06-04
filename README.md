@@ -13,6 +13,8 @@ Details
 
 Additions - Columns
 
+PID Process ID traffic 
+
 ⌚Δ (time delta) Type Delta time
 
 ByIF (Bytes In Flight) tcp.analysis.bytes_in_flight
@@ -29,8 +31,9 @@ Auth Username / LDAP assertion (Authenication Username) ldap.assertionValue or r
 
 SNI / URI (TLS URL Endpoint) tls.handshake.extensions_server_name
 
-TTL (Time To Live) ip.ttl or ipv6.hlim
+HTTP Version  Shows HTTP2 (h2) and HTTP1.1
 
+TTL (Time To Live) ip.ttl or ipv6.hlim
 
 Additions - Filter Buttons
 
