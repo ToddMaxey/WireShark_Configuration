@@ -9,15 +9,18 @@ Or you can manually add the columns and filters.
 
 
 
-Details
+Details:
 
 Additions - Columns
 
-PID Process ID traffic 
+PID frame.comment   Process ID network of network traffic (only present if you used an etl trace method on a Windows machine (Vista+) and converted it with etl2pcapng
+See: https://github.com/microsoft/Convert-Etl2Pcapng and https://github.com/microsoft/etl2pcapng
 
 ⌚Δ (time delta) Type Delta time
 
 ByIF (Bytes In Flight) tcp.analysis.bytes_in_flight
+
+RTT (Round Trip Time) tcp.analysis.bytes_in_flight
 
 SPort (Source Port) tcp.srcport or udp.srcport
 
@@ -27,9 +30,7 @@ Auth (Authenication) kerberos or ntlmssp or radius or ldap.authentication or ima
 
 Cert (Certificate) tls.handshake.certificates or pkcs12 or x509af or x509ce or x509if or x509sat
 
-Auth Username / LDAP assertion (Authenication Username) ldap.assertionValue or radius.User_Name or ntlmssp.auth.username or imap.request.username or mapi.EcDoConnect.name or kerberos.CNameString
-
-SNI / URI (TLS URL Endpoint) tls.handshake.extensions_server_name
+User / LDAP assertion / SNI / URI / HTTP / Cert  tls.handshake.extensions_server_name or http.request.uri or http.request.line or ldap.assertionValue or radius.User_Name or ntlmssp.auth.username or imap.request.username or mapi.EcDoConnect.name or kerberos.CNameString or x509sat.printableString
 
 HTTP Version  Shows HTTP2 (h2) and HTTP1.1
 
