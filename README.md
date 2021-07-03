@@ -9,7 +9,7 @@ Download the configuration ZIP and
 
 OR
 
-2. Replace the files is C:\Users\<yourusername>\AppData\Roaming\Wireshark
+2. Replace the files is C:\Users\\<yourusername>\AppData\Roaming\Wireshark
 
 Or you can manually add the columns and filters.
 
