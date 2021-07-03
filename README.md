@@ -3,7 +3,13 @@ This is my personal Wireshark configuration. This aids me in troubleshooting by 
 
 Instructions:
 
-Download the configuration ZIP and replace the files is C:\Users\<yourusername>\AppData\Roaming\Wireshark
+Download the configuration ZIP and 
+
+1. Use the profile import feature in Wireshark located in the bottom right corner of the Wireshark screen
+
+OR
+
+2. Replace the files is C:\Users\<yourusername>\AppData\Roaming\Wireshark
 
 Or you can manually add the columns and filters.
 
