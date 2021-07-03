@@ -11,7 +11,9 @@ Or you can manually add the columns and filters.
 
 Details:
 
+
 Additions - Columns
+
 
 PID frame.comment   Process ID network of network traffic (only present if you used an etl trace method on a Windows machine (Vista+) and converted it with etl2pcapng
 See: https://github.com/microsoft/Convert-Etl2Pcapng and https://github.com/microsoft/etl2pcapng
@@ -36,7 +38,12 @@ HTTP Version  Shows HTTP2 (h2) and HTTP1.1
 
 TTL (Time To Live) ip.ttl or ipv6.hlim
 
+
+
+
 Additions - Filter Buttons
+
+
 
 HTTPS - tcp.port == 443
 
@@ -61,3 +68,5 @@ Remove RDP - !(tcp.port == 3389) and !(udp.port == 3389)
 TCP Flags - tcp.flags == 0x2 or tcp.flags == 0xc2 or tcp.flags == 0x12 or tcp.flags == 0x52 or tcp.flags == 0x14 or tcp.flags == 0x4
 
 TLS Alerts - (tls.record.content_type == 21) && (tls.record.length < 26)
+
+Bad TLS - tls.handshake.version < 0x0303
