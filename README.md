@@ -1,4 +1,4 @@
-# WireShark_Configuration
+# WireShark Configuration
 
 Though for the release "Operational Echo - The delusion of forward momentum obtained with self-determined trade craft and persistence"
 
